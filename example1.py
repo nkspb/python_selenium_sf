@@ -10,5 +10,6 @@ driver.get("http://130.193.37.179/app/pets")
 t = (driver.find_elements(By.XPATH, "//*[@id=\"image\"]"))[0].click()
 sleep(3)
 
-driver.save_screenshot("pet_home.png")
+driver.save_screenshot("pet_home987964.png")
+sleep(100)
 driver.quit()
