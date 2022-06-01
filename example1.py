@@ -6,9 +6,9 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 driver = webdriver.Chrome("A:\\Users\\nkomo\\Documents\\DevOps\\projects\\B2\\python_selenium_sf\\python_selenium_sf\\chromedriver.exe")
-driver.get("https://google.com")
-driver.find_element(By.XPATH, "//input[@title=\"Поиск\"]").send_keys("Skillfactory" + Keys.RETURN)
+driver.get("http://130.193.37.179/app/pets")
+t = (driver.find_elements(By.XPATH, "//*[@id=\"image\"]"))[0].click()
+sleep(3)
 
-sleep(2)
-driver.save_screenshot("sf.png")
+driver.save_screenshot("pet_home.png")
 driver.quit()
